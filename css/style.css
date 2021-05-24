@@ -9,6 +9,8 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-indent: 0;
+    float: left;
+    z-index: 1;
 }
 .menu ul{
     list-style: none;
@@ -27,7 +29,7 @@
     color:#fff;
 }
 .menu ul ul{
-    position: relative;
+    position: sticky;
     visibility: hidden;
 }
 @keyframes mostraMenu{
@@ -40,8 +42,8 @@
 }
 .menu ul li:hover ul{
     visibility: visible;
-    z-index: 1;
     animation: mostraMenu 0.5s;
+    z-index: 1;
 }
 .menu a:hover{
     background-color: #f4f4f4;
@@ -88,7 +90,6 @@ label[for="bt_menu"]{
         margin-top: 5px;
         margin-left: -100%;
         transition: all .4s;
-        z-index: index 1;
     }
     .menu ul li{
         width: 100%;
@@ -104,25 +105,24 @@ label[for="bt_menu"]{
         height: 0;
         max-height: 200px;
         width: 100%;
-        z-index: 1;
     }
     
 }
 .secundaria{
-    position: absolute;
     width: 90%;
-    height: 50%;
-    top:100px;
-    left: 50px;
+
 }
 .principal{
-    position: absolute;
-    width: 90%;
+    position: initial;
+    width: 60%;
     height: 50%;
     top:100px;
-    left: 50px;
-    text-indent: 50px;
+    left: 100px;
+    right: 100px;
     font-size: 20px;
+}
+p{
+    text-indent: 50px;
 }
 .titulo{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -135,6 +135,7 @@ body{
     background-color:lavender;
     line-height: 1.8;
     text-align: justify;
+    font-size: 17px;
 }
 h1{
     font-family:'Times New Roman', Times, serif;
@@ -155,20 +156,46 @@ p{
 .imagem-direita{
     float: right;
 }
+imagem_esquerda{
+    float: left
+}
 .rodape{
     background-color:rgb(68, 59, 83) ;
-    padding:20px 0px 20px 0px;
-    position: absolute;
+    padding:15px 0px 15px 0px;
     width: 100%;
     bottom: 0;
     text-align: center;
     font-family: cursive;
 }
-.rodape span{
+.rodape_principal{
+    background-color:rgb(68, 59, 83) ;
+    padding:20px 0px 20px 0px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-family: cursive;
+}
+.rodape_principal span{
     color:seashell;
     display: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.rodape:hover span{
+
+.rodape_principal:hover span{
     display: block;
+}
+#software figure img{
+    height:70px;
+    width:120px;
+}
+#autora img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50% ;
+}
+#sobre{
+    margin: 100px 200px 100px 200px;
+    border: solid 1px;
+    list-style: none;
 }
