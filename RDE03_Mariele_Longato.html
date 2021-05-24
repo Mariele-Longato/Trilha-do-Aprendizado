@@ -9,104 +9,131 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>HTML - Conceitos Fundamentais</h1>
-
-        <h2>Ambiente de trabalho</h2>
-            <h3><font color ="#191970">Editores de código</font></h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">HTML</a>
                 <ul>
-                    <li>Notepad++</li>
-                    <li>Sublime Text</li>
-                    <li>Visual Studio</li>
+                    <li><a href="RDE01_Mariele_Longato.html">Internet</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" target="_blank">Conceitos Fundamentais</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" download="RDE02_Mariele_Longato.pdf" type="application/pdf">| Download</a></li>
+                    <li><a href="RDE03_Mariele_Longato.html">Introdução ao HTML</a></li>
+                    <li><a href="RDE04_Mariele_Longato.HTML">Imagens e Listas</a></li>
+                    <li><a href="RDE05_Mariele_Longato.html">Hyperlinks</a></li>
+                    <li><a href="RDE06_Mariele_Longato.html">Software de Versionamento</a></li>
+                    <li><a href="RDE07_Mariele_Longato.html">Branches e Hospedagem</a></li>
+                    <li><a href="RDE08_Mariele_Longato.html">Outras Tags HTML</a></li>
+                    <li><a href="RDE09_Mariele_Longato.html">Multimídias</a></li>
                 </ul>
-            <h3><font color ="#191970">Navegadores</font></h3>
+            </li>
+            <li><a href="#">CSS</a>
                 <ul>
-                    <li>Google Chrome</li>
-                    <li>Microsoft Edge</li>
+                    <li><a href="RDE10_Mariele_Longato.html">CSS</a></li>
+                    <li><a href="RDE11-Mariele_Longato.html">Seletores Personalizados</a></li>
+                    <li><a href="RDE12-Mariele_Longato.html">BoxModel</a></li>
                 </ul>
-
-        <h2>Tecnologias</h2>
+            </li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+    <div class="secundaria"> 
+        <h1>HTML - Conceitos Fundamentais</h1>
+            <h2>Ambiente de trabalho</h2>
+                <h3><font color ="#191970">Editores de código</font></h3>
+                    <ul>
+                        <li>Notepad++</li>
+                        <li>Sublime Text</li>
+                        <li>Visual Studio</li>
+                    </ul>
+                <h3><font color ="#191970">Navegadores</font></h3>
+                    <ul>
+                        <li>Google Chrome</li>
+                        <li>Microsoft Edge</li>
+                    </ul>
+            <h2>Tecnologias</h2>
+                    <p>
+                        <figure>
+                            <img src="img/logos.png" alt="Símbolos">
+                        </figure>
+                    </p>
+                <h3><font color ="#191970">HTML</font></h3>
+                    <p>Conteúdo</p>
+                    <ul>
+                        <li>Texto</li>
+                        <li>Tabela</li>
+                        <li>Imagem</li>
+                        <li>Vídeo</li>
+                    </ul>
+        
+                <h3><font color ="#191970">CSS</font></h3>
+                    <p>Estilização de Conteúdo</p>
+                    <ul>
+                        <li>Cores</li>
+                        <li>Fontes</li>
+                        <li>Tamanho</li>
+                        <li>Sombras</li>
+                        <li>Posicionamento</li>
+                    </ul>
+        
+                <h3><font color ="#191970">JS</font></h3>
+                    <p>Interatividade</p>
+                    <ul>
+                        <li>Menus Interativos</li>
+                        <li>Validação</li>
+                        <li>Popups</li>
+                        <li>Animação</li>
+                    </ul>
+            <h2>Página Web e Website</h2>
+                <p><i><b>Página web ou Webpage</b> é um arquivo onde você pode inserir textos, imagens, tabelas e incorporar planilhas, apresentações, vídeos com ligações de hipertexto que permitem a navegação de uma página, ou seção, para outra.</i></p>
+                <p><em><strong> Websites ou Sites</strong> são uma coleção de páginas web armazenadas em uma pasta ou em subpastas relacionadas de um servidor web.</em></p>
+            <h2>Profissionais</h2>
+                <ol>
+                    <li>Front-End</li>
+                    <li>Back-End</li>
+                    <li>FullStack</li>
+                </ol>
+        
+            <h2>HTML - Hypertext Markup Language</h2>
+                <p><em>É uma <b>linguagem de Marcação de Hipertexto</b> baseada em <b>tags</b> criada na década de 1990 por Tim Berners-Lee para <b>publicação de conteúdo em hipertexto</b>, tais como, <b>texto, imagem, áudio e vídeo</b>, e que podem ser vinculados através de <b>hyperlinks</b>.</em></p>
+            <h2>Tags</h2>
+                <p><i>As <strong>tags</strong> definem ao navegador a <strong>marcação de conteúdo</strong>. as tags tem <b>funcionalidades específicas</b>. Sem o uso de tags o navegador exibe um <b>texto plano</b>.</i></p>
+                <p><i>Sintaxe:</i><br> &lt; nome_tag &gt; conteúdo &lt; /nome_tag &gt;</p>
+                <p><em>As <b>tags</b> podem possuir <b>atributos</b>, ou seja, são parâmetros que definem algum tipo de informação extra do navegador.</em></p>
+                <p><i>Sintaxe:</i></p><p>&lt; nome_tag atributo="valor" &gt; conteúdo &lt; /nome_tag &gt;</p>
+            <h2>Estrutura básica do documento HTML</h2>
                 <p>
                     <figure>
-                        <img src="img/logos.png" alt="Símbolos">
+                        <img src ="img/sintaxeHTML.PNG" alt="sintaxe html">
                     </figure>
                 </p>
-            <h3><font color ="#191970">HTML</font></h3>
-                <p>Conteúdo</p>
-                <ul>
-                    <li>Texto</li>
-                    <li>Tabela</li>
-                    <li>Imagem</li>
-                    <li>Vídeo</li>
-                </ul>
-    
-            <h3><font color ="#191970">CSS</font></h3>
-                <p>Estilização de Conteúdo</p>
-                <ul>
-                    <li>Cores</li>
-                    <li>Fontes</li>
-                    <li>Tamanho</li>
-                    <li>Sombras</li>
-                    <li>Posicionamento</li>
-                </ul>
-    
-            <h3><font color ="#191970">JS</font></h3>
-                <p>Interatividade</p>
-                <ul>
-                    <li>Menus Interativos</li>
-                    <li>Validação</li>
-                    <li>Popups</li>
-                    <li>Animação</li>
-                </ul>
-
-        <h2>Página Web e Website</h2>
-            <p><i><b>Página web ou Webpage</b> é um arquivo onde você pode inserir textos, imagens, tabelas e incorporar planilhas, apresentações, vídeos com ligações de hipertexto que permitem a navegação de uma página, ou seção, para outra.</i></p>
-            <p><em><strong> Websites ou Sites</strong> são uma coleção de páginas web armazenadas em uma pasta ou em subpastas relacionadas de um servidor web.</em></p>
-
-        <h2>Profissionais</h2>
-            <ol>
-                <li>Front-End</li>
-                <li>Back-End</li>
-                <li>FullStack</li>
-            </ol>
-    
-        <h2>HTML - Hypertext Markup Language</h2>
-            <p><em>É uma <b>linguagem de Marcação de Hipertexto</b> baseada em <b>tags</b> criada na década de 1990 por Tim Berners-Lee para <b>publicação de conteúdo em hipertexto</b>, tais como, <b>texto, imagem, áudio e vídeo</b>, e que podem ser vinculados através de <b>hyperlinks</b>.</em></p>
-
-        <h2>Tags</h2>
-            <p><i>As <strong>tags</strong> definem ao navegador a <strong>marcação de conteúdo</strong>. as tags tem <b>funcionalidades específicas</b>. Sem o uso de tags o navegador exibe um <b>texto plano</b>.</i></p>
-            <p><i>Sintaxe:</i><br> &lt; nome_tag &gt; conteúdo &lt; /nome_tag &gt;</p>
-            <p><em>As <b>tags</b> podem possuir <b>atributos</b>, ou seja, são parâmetros que definem algum tipo de informação extra do navegador.</em></p>
-            <p><i>Sintaxe:</i></p><p>&lt; nome_tag atributo="valor" &gt; conteúdo &lt; /nome_tag &gt;</p>
-
-        <h2>Estrutura básica do documento HTML</h2>
-            <p>
-                <figure>
-                    <img src ="img/sintaxeHTML.PNG" alt="sintaxe html">
-                </figure>
-            </p>
-
-        <h2>Marcação de Títulos</h2>
-            <p><em>As <strong>tags de heading</strong> definem o <b>título</b> e possui seis níveis de importância.</em></p>
-            <p>Sintaxe:</p>
-                <figure>
-                    <img src="img/titulo.jpg" alt="Tags de títulos">
-                </figure>
-
-        <h2>Marcação de Parágrafos</h2>
-            <p><i>As <b>tags de parágrafo</b> definem a apresentação <b>dos parágrafos</b>.</i></p>
-            <p>Sintaxe:</p>
-            <p>&lt; p &gt;Este é um parágrafo&lt; /p &gt;<br>&lt; p &gt;Este é outro parágrafo&lt; /p &gt;</p>
-
-        <h2>Marcação de quebra de linhas</h2>
-            <p><em>As <strong>tags de quebra de linha</strong> produzem uma quebra de linha em um texto. É útil para escrever poemas ou um endereço, onde a divisão de linha é significante.</em></p>
-            <p>Sintaxe:</p>
-            <p>Esta é uma &lt; br &gt; quebra de linha</p>
-
-        <h2>Marcação para formatação de texto</h2>
-            <p>As tags para formatação de texto definem <strong>destaque, tamanho de fonte, cor dentre outros</strong>.</p>
-            <p>Sintaxe:</p>
-                <figure>
-                    <img src ="img/formatacao.png" alt="formatação">
-                </figure>
+            <h2>Marcação de Títulos</h2>
+                <p><em>As <strong>tags de heading</strong> definem o <b>título</b> e possui seis níveis de importância.</em></p>
+                <p>Sintaxe:</p>
+                    <figure>
+                        <img src="img/titulo.jpg" alt="Tags de títulos">
+                    </figure>
+            <h2>Marcação de Parágrafos</h2>
+                <p><i>As <b>tags de parágrafo</b> definem a apresentação <b>dos parágrafos</b>.</i></p>
+                <p>Sintaxe:</p>
+                <p>&lt; p &gt;Este é um parágrafo&lt; /p &gt;<br>&lt; p &gt;Este é outro parágrafo&lt; /p &gt;</p>
+            <h2>Marcação de quebra de linhas</h2>
+                <p><em>As <strong>tags de quebra de linha</strong> produzem uma quebra de linha em um texto. É útil para escrever poemas ou um endereço, onde a divisão de linha é significante.</em></p>
+                <p>Sintaxe:</p>
+                <p>Esta é uma &lt; br &gt; quebra de linha</p>
+            <h2>Marcação para formatação de texto</h2>
+                <p>As tags para formatação de texto definem <strong>destaque, tamanho de fonte, cor dentre outros</strong>.</p>
+                <p>Sintaxe:</p>
+                    <figure>
+                        <img src ="img/formatacao.png" alt="formatação">
+                    </figure>
+    </div>
+    <div class="rodape">
+        by Mariele Longato
+        <span>
+            Tecnologia em Análise e Desenvolvimento de Sistemas<br>
+            Instituto Federal do Paraná - Campus Irati<br>
+            Rua Pedro Koppe, 100 - Vila Matilde <br>Irati - PR<br>Telefone: (42) 2104-0200
+        </span>
+    </div>
 </body>
 </html>
