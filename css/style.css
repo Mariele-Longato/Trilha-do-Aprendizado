@@ -1,0 +1,244 @@
+*{
+    margin: 0 auto; 
+    padding: 0;
+}
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-indent: 0;
+    float: left;
+    z-index: 1;
+    line-height: 1.8;
+}
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+.menu ul li{
+    width: 150px;
+    float: left;
+}
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color:#fff;
+}
+.menu ul ul{
+    position: sticky;
+    visibility: hidden;
+}
+@keyframes mostraMenu{
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 200px;
+    }
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    animation: mostraMenu 0.5s;
+    z-index: 1;
+}
+.menu a:hover{
+    background-color: #f4f4f4;
+    color: #555;
+}
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
+    width: 200px;
+}
+.menu ul ul li a{
+    background-color: #069;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+#bt_menu{
+    display: none;
+}
+
+@media(max-width: 800px){
+    label[for="bt_menu"]{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    #bt_menu:checked ~.menu{
+        margin-left: 0;
+    }
+    .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul{
+        position: relative;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: 0;
+        max-height: 200px;
+        width: 100%;
+    }
+    
+}
+.secundaria{
+    width: 90%;
+    line-height: 1.8;
+
+}
+.pseudo span{
+    display: none;
+}
+.pseudo:hover span{
+    display: block;
+}
+.exemplo1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkblue;
+    border: 1px solid cadetblue;
+    margin: 10px;
+    padding: 10px;
+    width: 80px;
+    height: 30px;
+}
+.exemplo2{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(208,211,8);
+    border: 1px solid orange;
+    margin:10px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+}
+.layer1{
+    position: relative;
+    background-color: darkcyan;
+    width: 70px;
+    height: 70px;
+    bottom: 0px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.layer2{
+    position: relative;
+    background-color: cadetblue;
+    width: 70px;
+    height: 70px;
+    bottom: 20px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.principal{
+    position: initial;
+    width: 60%;
+    height: 50%;
+    top:100px;
+    left: 100px;
+    right: 100px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+p{
+    text-indent: 50px;
+}
+.titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;    
+    text-shadow: 2px 2px rgba(155, 149, 149, 0.719);
+    text-align: center;
+    
+    
+}
+body{
+    background-color:lavender;
+    text-align: justify;
+    font-size: 17px;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    color: rgb(39, 35, 35);
+}
+h3{
+    color: rgb(33, 40, 70);
+}
+h4{
+    color: slategrey;
+}
+p{
+    text-align: justify;
+}
+.imagem-direita{
+    float: right;
+}
+imagem_esquerda{
+    float: left
+}
+.rodape{
+    background-color:rgb(68, 59, 83) ;
+    padding:15px 0px 15px 0px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-family: cursive;
+}
+.rodape_principal{
+    background-color:rgb(68, 59, 83) ;
+    padding:20px 0px 20px 0px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-family: cursive;
+}
+.rodape_principal span{
+    color:seashell;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    
+}
+#software figure img{
+    height:70px;
+    width:120px;
+}
+#autora img{
+    height: 300px;
+    width: 200px;
+    line-height: normal;
+}

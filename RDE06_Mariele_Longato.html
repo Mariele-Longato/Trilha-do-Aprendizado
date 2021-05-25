@@ -6,62 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_ml.ico" type="image/x-icon">
     <title>Software de Versionamento</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Software de Versionamento</h1>
-        <p><i>Sistema que tem por objetivo realizar o <b>controle de versões de um código ou documento</b></i></p>
-        <p><i>É possível gerenciar as <b>versões de um código ou documento </b>realizadas por um <b>desenvolvedor</b> ou <b>equipe</b> de desenvolvedores.</i></p>
-
-        <h2>Software de Controle de versões</h2>
-            <p>
-                <figure>
-                    <img src="img/imagem.PNG" alt="controle de versões">
-                </figure>
-            </p>
-            <h3><font color="#191970">Tipos de Software de Controle de Versão</font></h3>
-                <h4>Centralizado</h4>
-                    <p>Possui um <b>repositório central em um servidor</b> com controle de versões.<br><b>Depende</b> do servidor.</p>
-                    <ul>
-                        <li>Software Subversion</li>
-                    </ul>
-                <h4>Distribuído</h4>
-                    <p>Possui um <b>repositório local</b> com controle de versões.<br> Atualizações no repositório central <br> <b>Independente</b> do servidor.</p>
-                    <ul>
-                        <li>Softwares Mercurial, Git</li>
-                    </ul>
-        <h2>Git</h2>
-    
-            <p>É um software livre de versionamento que surgiu para o desenvolvimento do Kernel Linux, foi projetado e desenvolvido por Linus Torvalds em 2005.</p>
-            <p>Cada diretório de trabalho do Git é um <b>repositório</b> com um <b>histórico completo</b> e habilidade total de <b>acomapnhamento das revisões, não dependente</b> de acesso a uma rede ou a um <b>servidor central.</b></p>
-            <h3><font color="#191970">Comandos GIT</font></h3>
-                <p><b><i>commit</i></b> - torna permanete um conjunto de alterações em um repositório.</p>
-                <p><b><i>push</i></b> - envia alterações para o servidor no repositório remoto.</p>
-                <p><b><i>fetch</i></b> - verifica se o repositório local estáem sincronia com o remoto.</p>
-                <p><b><i>pull</i></b> - sincroniza o repositório local com o remoto atualizando as versões.</p>
-
-
-
-        <h2>GitHub</h2>
-            <p>Plataforma de hospedagem de código fonte e arquivos com controle de versão.</p>
-            <p>Surgiu em 2008 e foi adquirido em 2018 pela Microsoft por US$ 7,5 bilhões.</p>
-            <p>Atualmente hospeda cerca de 100 milhões de projetos e possui aproximadamente 56 milhões de usuários.</p>
-            
-            <h3><font color="#191970">Preparando o ambiente</font></h3>
-            <ul>
-                <li>Baixar o Git</li>
-                <li>Criar uma conta no GitHub</li>
-                <li>Baixar o GitHub Desktop</li>
-                <li>VScode</li>
-            </ul>
-            <p><i>Para fazer o dowload acesse os sites clicando nas imagens abaixo!</i></p>
-            <figure>
-                <a href="https://git-scm.com/" target="_blank"><img src="img/git.png" ></a>
-                <a href="http://www.github.com" target="_blank"><img src="img/github.png"></a>
-                <a href="https://desktop.github.com/" target="_blank"><img src="img/desktop.jpg"></a>
-                <a href="https://code.visualstudio.com/" target="_blank"><img src="img/vs.png"></a>
-            </figure>
-
-        <p>GitHub: <a href="https://github.com/Mariele-Longato">Mariele Longato</a></p>
-
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">HTML</a>
+                <ul>
+                    <li><a href="RDE01_Mariele_Longato.html">Internet</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" target="_blank">Conceitos Fundamentais</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" download="RDE02_Mariele_Longato.pdf" type="application/pdf">| Download</a></li>
+                    <li><a href="RDE03_Mariele_Longato.html">Introdução ao HTML</a></li>
+                    <li><a href="RDE04_Mariele_Longato.HTML">Imagens e Listas</a></li>
+                    <li><a href="RDE05_Mariele_Longato.html">Hyperlinks</a></li>
+                    <li><a href="RDE06_Mariele_Longato.html">Software de Versionamento</a></li>
+                    <li><a href="RDE07_Mariele_Longato.html">Branches e Hospedagem</a></li>
+                    <li><a href="RDE08_Mariele_Longato.html">Outras Tags HTML</a></li>
+                    <li><a href="RDE09_Mariele_Longato.html">Multimídias</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="RDE10_Mariele_Longato.html">CSS</a></li>
+                    <li><a href="RDE11-Mariele_Longato.html">Seletores Personalizados</a></li>
+                    <li><a href="RDE12-Mariele_Longato.html">BoxModel</a></li>
+                </ul>
+            </li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+    <div class="secundaria">
+        <h1>Software de Versionamento</h1>
+            <p><i>Sistema que tem por objetivo realizar o <b>controle de versões de um código ou documento</b></i></p>
+            <p><i>É possível gerenciar as <b>versões de um código ou documento </b>realizadas por um <b>desenvolvedor</b> ou <b>equipe</b> de desenvolvedores.</i></p>
+            <h2>Software de Controle de versões</h2>
+                <p>
+                    <figure>
+                        <img src="img/imagem.PNG" alt="controle de versões">
+                    </figure>
+                </p>
+                <h3>>Tipos de Software de Controle de Versão</h3>
+                    <h4>Centralizado</h4>
+                        <p>Possui um <b>repositório central em um servidor</b> com controle de versões.<br><b>Depende</b> do servidor.</p>
+                        <ul>
+                            <li>Software Subversion</li>
+                        </ul>
+                    <h4>Distribuído</h4>
+                        <p>Possui um <b>repositório local</b> com controle de versões.<br> Atualizações no repositório central <br> <b>Independente</b> do servidor.</p>
+                        <ul>
+                            <li>Softwares Mercurial, Git</li>
+                        </ul>
+            <h2>Git</h2>
+        
+                <p>É um software livre de versionamento que surgiu para o desenvolvimento do Kernel Linux, foi projetado e desenvolvido por Linus Torvalds em 2005.</p>
+                <p>Cada diretório de trabalho do Git é um <b>repositório</b> com um <b>histórico completo</b> e habilidade total de <b>acomapnhamento das revisões, não dependente</b> de acesso a uma rede ou a um <b>servidor central.</b></p>
+                <h3>Comandos GIT</h3>
+                    <p><b><i>commit</i></b> - torna permanete um conjunto de alterações em um repositório.</p>
+                    <p><b><i>push</i></b> - envia alterações para o servidor no repositório remoto.</p>
+                    <p><b><i>fetch</i></b> - verifica se o repositório local estáem sincronia com o remoto.</p>
+                    <p><b><i>pull</i></b> - sincroniza o repositório local com o remoto atualizando as versões.</p>
+            <h2>GitHub</h2>
+                <p>Plataforma de hospedagem de código fonte e arquivos com controle de versão.</p>
+                <p>Surgiu em 2008 e foi adquirido em 2018 pela Microsoft por US$ 7,5 bilhões.</p>
+                <p>Atualmente hospeda cerca de 100 milhões de projetos e possui aproximadamente 56 milhões de usuários.</p>
+        
+                <h3>Preparando o ambiente</h3>
+                <ul>
+                    <li>Baixar o Git</li>
+                    <li>Criar uma conta no GitHub</li>
+                    <li>Baixar o GitHub Desktop</li>
+                    <li>VScode</li>
+                </ul>
+                <p><i>Para fazer o dowload acesse os sites clicando nas imagens abaixo!</i></p>
+                <div id="software">
+                    <figure>
+                        <a href="https://git-scm.com/" target="_blank"><img src="img/git.png" ></a>
+                        <a href="http://www.github.com" target="_blank"><img src="img/github.png"></a>
+                        <a href="https://desktop.github.com/" target="_blank"><img src="img/desktop.jpg"></a>
+                        <a href="https://code.visualstudio.com/" target="_blank"><img src="img/vs.png"></a>
+                    </figure>
+                </div>
+            <p>GitHub: <a href="https://github.com/Mariele-Longato">Mariele Longato</a></p>
+    </div>
+    <div class="rodape">
+        by Mariele Longato
+    </div>
 </body>
 </html>

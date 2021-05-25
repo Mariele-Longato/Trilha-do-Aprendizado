@@ -6,82 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_ml.ico" type="image/x-icon">
     <title>Hyperlinks</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hyperlinks</h1>
-        <h2>Hyperlink ou link</h2>
-            <p>
-                <figure>
-                    <img src="img/link.jpg" alt="hyperlink">
-                </figure>
-            </p>
-            <p>É uma referência dentro de um documento em hipertexto para outras partes do mesmo documento, outros documentos, arquivos ou endereço eletrônico.</p>
-            <p>Os links podem ser remotos, internos, locais, com endereço de correio ou arquivos.</p>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">HTML</a>
+                <ul>
+                    <li><a href="RDE01_Mariele_Longato.html">Internet</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" target="_blank">Conceitos Fundamentais</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" download="RDE02_Mariele_Longato.pdf" type="application/pdf">| Download</a></li>
+                    <li><a href="RDE03_Mariele_Longato.html">Introdução ao HTML</a></li>
+                    <li><a href="RDE04_Mariele_Longato.HTML">Imagens e Listas</a></li>
+                    <li><a href="RDE05_Mariele_Longato.html">Hyperlinks</a></li>
+                    <li><a href="RDE06_Mariele_Longato.html">Software de Versionamento</a></li>
+                    <li><a href="RDE07_Mariele_Longato.html">Branches e Hospedagem</a></li>
+                    <li><a href="RDE08_Mariele_Longato.html">Outras Tags HTML</a></li>
+                    <li><a href="RDE09_Mariele_Longato.html">Multimídias</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="RDE10_Mariele_Longato.html">CSS</a></li>
+                    <li><a href="RDE11-Mariele_Longato.html">Seletores Personalizados</a></li>
+                    <li><a href="RDE12-Mariele_Longato.html">BoxModel</a></li>
+                </ul>
+            </li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+    <div class="secundaria">
+        <h1>Hyperlinks</h1>
+            <h2>Hyperlink ou link</h2>
+                <div class="imagem_esquerda">
+                    <figure>
+                        <img src="img/link.jpg" alt="hyperlink">
+                    </figure>
+                </div>
+                <p>É uma referência dentro de um documento em hipertexto para outras partes do mesmo documento, outros documentos, arquivos ou endereço eletrônico.</p>
+                <p>Os links podem ser remotos, internos, locais, com endereço de correio ou arquivos.</p>
         
-        <h2>Marcação de Hiperlinks</h2>
-            <p>A marcação de <i><b>hiperlinks</i></b> acontece utilizando a <i><b>tag &lt;a&gt;</i></b> e a propriedade <b>href</b> que faz referência para o conteúdo desejado.</p>
-            <p>Sintaxe:</p>
-            <p>
-                <figure>
-                    <img src="img/marcacao_hiperlynk.png" alt="Sintaxe marcação de link">
-                </figure>
-            </p>
-
-        <h3><i>Hiperlinks</i> externos ou remotos</h3>
-            <p>São <i><b>links</b></i> que referenciam sites ou páginas da web. Na propriedade <em><strong>href</strong></em> utilizamos a <b>URL (Uniform Resource Locator)</b> para a referência que desejamos.</p>
-            <p>Sintaxe:</p>
-            <p>
-                <figure>
-                    <img src="img/hyperlink_externo.png" alt="hyperlink externo">
-                </figure>
-            </p>
+            <h2>Marcação de Hiperlinks</h2>
+                <p>A marcação de <i><b>hiperlinks</i></b> acontece utilizando a <i><b>tag &lt;a&gt;</i></b> e a propriedade <b>href</b> que faz referência para o conteúdo desejado.</p>
+                <p>Sintaxe:</p>
+                <p>
+                    <figure>
+                        <img src="img/marcacao_hiperlynk.png" alt="Sintaxe marcação de link">
+                    </figure>
+                </p>
+            <h3><i>Hiperlinks</i> externos ou remotos</h3>
+                <p>São <i><b>links</b></i> que referenciam sites ou páginas da web. Na propriedade <em><strong>href</strong></em> utilizamos a <b>URL (Uniform Resource Locator)</b> para a referência que desejamos.</p>
+                <p>Sintaxe:</p>
+                <p>
+                    <figure>
+                        <img src="img/hyperlink_externo.png" alt="hyperlink externo">
+                    </figure>
+                </p>
         
-        <h3><em>Hiperlinks</em> internos</h3>
-            <p>São <em>links</em> <b>que apontam</b> a um lugar diferente <b>dentro da mesma página</b> e possibilta acessar diferentes <strong>parágrafos ou seções</strong> quando o documento é extenso.</p>
-            <p>Sintaxe:</p>
-            <p>
-                <figure>
-                    <img src="img/hyperlink_interno.png" alt="hyperlink interno">
-                </figure>
-            </p>
-
-        <h3><i>Hiperlinks</i> locais</h3>
-            <p>São <em>links</em><b> que apontam</b> para outras páginas dentro de um <b>mesmo site</b>.</p>
-            <p>Sintaxe:</p>
-            <p>
-                <figure>
-                    <img src="img/hyperlink_local.png" alt="Hyperlink local">
-                </figure>
-            </p>
-
-        <h3><i>Hyperlinks</i> em imagens</h3>
-            <p>É possível realizar hyperlinks imagens envolvendo a <strong><em>tag</em> de imagem com a tag de <i>hiperlink.</i></strong></p>
-            <p>Sintaxe:</p>
-            <p>
-                <figure>
-                    <img src="img/hyperlink_imagem.png" alt="Hyperlink em imagem">
-                </figure>
-            </p>
-
-        <h3><i>Hyperlinks</i> para <i>downloads</i> de arquivos</h3>
-            <p>São <i>links</i> <b>que apontam</b> para arquivos e possibilitam realizar <em><b>download</b></em> destes arquivos.</p>
-            <p>Sintaxe:</p>
-            <p>
-                <figure>
-                    <img src="img/hyperlink_download.png" alt="Hyperlink download">
-                </figure>
-            </p>
-
-        <h3><i>Hiperlynks</i> para endereço eletrônico</h3>
-            <p>São <i>links</i> <b>que apontam</b> para um endereço eletrônico.</p>
-            <p>Sintaxe:</p>
-            <p>
-                <figure>
-                    <img src="img/hyperlink_email.png" alt="Hyperlink email">
-                </figure>
-            </p>
-
-
+            <h3><em>Hiperlinks</em> internos</h3>
+                <p>São <em>links</em> <b>que apontam</b> a um lugar diferente <b>dentro da mesma página</b> e possibilta acessar diferentes <strong>parágrafos ou seções</strong> quando o documento é extenso.</p>
+                <p>Sintaxe:</p>
+                <p>
+                    <figure>
+                        <img src="img/hyperlink_interno.png" alt="hyperlink interno">
+                    </figure>
+                </p>
+            <h3><i>Hiperlinks</i> locais</h3>
+                <p>São <em>links</em><b> que apontam</b> para outras páginas dentro de um <b>mesmo site</b>.</p>
+                <p>Sintaxe:</p>
+                <p>
+                    <figure>
+                        <img src="img/hyperlink_local.png" alt="Hyperlink local">
+                    </figure>
+                </p>
+            <h3><i>Hyperlinks</i> em imagens</h3>
+                <p>É possível realizar hyperlinks imagens envolvendo a <strong><em>tag</em> de imagem com a tag de <i>hiperlink.</i></strong></p>
+                <p>Sintaxe:</p>
+                <p>
+                    <figure>
+                        <img src="img/hyperlink_imagem.png" alt="Hyperlink em imagem">
+                    </figure>
+                </p>
+            <h3><i>Hyperlinks</i> para <i>downloads</i> de arquivos</h3>
+                <p>São <i>links</i> <b>que apontam</b> para arquivos e possibilitam realizar <em><b>download</b></em> destes arquivos.</p>
+                <p>Sintaxe:</p>
+                <p>
+                    <figure>
+                        <img src="img/hyperlink_download.png" alt="Hyperlink download">
+                    </figure>
+                </p>
+            <h3><i>Hiperlynks</i> para endereço eletrônico</h3>
+                <p>São <i>links</i> <b>que apontam</b> para um endereço eletrônico.</p>
+                <p>Sintaxe:</p>
+                <p>
+                    <figure>
+                        <img src="img/hyperlink_email.png" alt="Hyperlink email">
+                    </figure>
+                </p>
+    </div>
+    <div class="rodape">
+        by Mariele Longato
+    </div>
 
 
 </body>

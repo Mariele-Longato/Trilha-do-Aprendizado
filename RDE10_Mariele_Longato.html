@@ -6,60 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon_ml.ico" type="image/x-icon">
     <title>CSS</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Cascading Style Sheets (CSS)</h1>
-        <p><b><i>Cascading Style Sheets</i></b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamentos dentre outros.</p>
-        <h2>Componentes</h2>
+    <nav class="menu">
         <ul>
-            <li>Seletores - seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado</li>
-            <li>Propriedades - o aspecto específico do elemento que você quer usar como estilo</li>
-            <li>Valores - a configuração aplicada ao atributo</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">HTML</a>
+                <ul>
+                    <li><a href="RDE01_Mariele_Longato.html">Internet</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" target="_blank">Conceitos Fundamentais</a></li>
+                    <li><a href="RDE02_Mariele_Longato.pdf" download="RDE02_Mariele_Longato.pdf" type="application/pdf">| Download</a></li>
+                    <li><a href="RDE03_Mariele_Longato.html">Introdução ao HTML</a></li>
+                    <li><a href="RDE04_Mariele_Longato.HTML">Imagens e Listas</a></li>
+                    <li><a href="RDE05_Mariele_Longato.html">Hyperlinks</a></li>
+                    <li><a href="RDE06_Mariele_Longato.html">Software de Versionamento</a></li>
+                    <li><a href="RDE07_Mariele_Longato.html">Branches e Hospedagem</a></li>
+                    <li><a href="RDE08_Mariele_Longato.html">Outras Tags HTML</a></li>
+                    <li><a href="RDE09_Mariele_Longato.html">Multimídias</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="RDE10_Mariele_Longato.html">CSS</a></li>
+                    <li><a href="RDE11-Mariele_Longato.html">Seletores Personalizados</a></li>
+                    <li><a href="RDE12-Mariele_Longato.html">BoxModel</a></li>
+                </ul>
+            </li>
+            <li><a href="sobre.html">Sobre</a></li>
         </ul>
-        <p>Sintaxe:</p>
-        seletor{<br>
-            propriedades: valor; /*comentário*/<br>
-            propriedades-subpropriedades: valor;<br>
-        }
-
-        <p>Exemplo:</p>
-        p {<br>
-            color:blue;<br>
-            text-align: center;<br>
-        }
-
-        <h2>Formas de utilizar o CSS</h2>
-        <p>Há basicamente 3 formas diferentes de utilizar o CSS em documento HTML: <i>Inline, incorporado e externo.</i></p>
-        <h3>Inline</h3>
+    </nav>
+    <div class="secundaria">
+        <h1>Cascading Style Sheets (CSS)</h1>
+            <p><b><i>Cascading Style Sheets</i></b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamentos dentre outros.</p>
+            <h2>Componentes</h2>
             <ul>
-                <li>Os código CSS são definidos <b>dentro de uma tag HTML;</b></li>
-                <li>Afetam somente a tag em ue foi definida.</li>
+                <li>Seletores - seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado</li>
+                <li>Propriedades - o aspecto específico do elemento que você quer usar como estilo</li>
+                <li>Valores - a configuração aplicada ao atributo</li>
             </ul>
-
+            <p>Sintaxe:</p>
+            seletor{<br>
+                propriedades: valor; /*comentário*/<br>
+                propriedades-subpropriedades: valor;<br>
+            }
             <p>Exemplo:</p>
-            <figure>
-                <img src="img/inline.PNG" alt="exemplo de utilização css inline">
-            </figure>
-
-        <h3>Incorporado</h3>
-            <ul>
-                <li>Os código CSS são definidos no cabeçalho, <b>dentro da tag head</b>.</li>
-                <li>Afetam somente o documento em que foi definido.</li>
-            </ul>
-            <p>Exemplo:</p> 
-            <figure>
-                <img src="img/incorporado.PNG" alt="css incorporado">
-            </figure>
-        <h3>Externo</h3>
-            <ul>
-                <li>Os código CSS são definidos <b>em um arquivo externo</b>;</li>
-                <li>Afetam todos os documentos que estão linkado ao CSS.</li>
-            </ul>
-
-            <p>Exemplo:</p>
-            <figure>
-                <img src="img/externo.PNG" alt="css externo">
-            </figure>
+            p {<br>
+                color:blue;<br>
+                text-align: center;<br>
+            }
+            <h2>Formas de utilizar o CSS</h2>
+            <p>Há basicamente 3 formas diferentes de utilizar o CSS em documento HTML: <i>Inline, incorporado e externo.</i></p>
+            <h3>Inline</h3>
+                <ul>
+                    <li>Os código CSS são definidos <b>dentro de uma tag HTML;</b></li>
+                    <li>Afetam somente a tag em ue foi definida.</li>
+                </ul>
+                <p>Exemplo:</p>
+                <figure>
+                    <img src="img/inline.PNG" alt="exemplo de utilização css inline">
+                </figure>
+            <h3>Incorporado</h3>
+                <ul>
+                    <li>Os código CSS são definidos no cabeçalho, <b>dentro da tag head</b>.</li>
+                    <li>Afetam somente o documento em que foi definido.</li>
+                </ul>
+                <p>Exemplo:</p>
+                <figure>
+                    <img src="img/incorporado.PNG" alt="css incorporado">
+                </figure>
+            <h3>Externo</h3>
+                <ul>
+                    <li>Os código CSS são definidos <b>em um arquivo externo</b>;</li>
+                    <li>Afetam todos os documentos que estão linkado ao CSS.</li>
+                </ul>
+                <p>Exemplo:</p>
+                <figure>
+                    <img src="img/externo.PNG" alt="css externo">
+                </figure>
         
+    </div>
+    <div class="rodape">
+        by Mariele Longato
+    </div>
     </body>
 </html>
