@@ -20,8 +20,16 @@ header{
     display: flex;
     list-style: none;
 }
-.navegacao ul li ul{
+.navegacao ul li{
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+.navegacao ul ul{
     display: none;
+}
+.navegacao ul ul li{
+    width: 200px;
 }
 .navegacao ul li:hover ul{
     display: block ;
@@ -51,12 +59,18 @@ header{
 .principal h1{
     text-align: center;
     color:#221f1f;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif
     font-size: 35px;;
-    text-shadow: 4px 4px 6px #2e4159;
+    text-shadow: 2px 3px 5px #2e4159;
 }
 .principal h2{
     color: #2e4159;
+}
+.principal h3{
+    color:rgb(95, 138, 138);
+}
+.principal h4{
+    color: rgb(90, 108, 158);
 }
 .rodape{
     color:#2e4159;
@@ -81,4 +95,61 @@ header{
 }
 .sobre p{
     text-align: center;
+}
+.pseudo span{
+    display: none;
+}
+.pseudo:hover span{
+    display: block;
+}
+.exemplo1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkblue;
+    border: 1px solid cadetblue;
+    margin: 10px;
+    padding: 10px;
+    width: 80px;
+    height: 30px;
+}
+.exemplo2{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(208,211,8);
+    border: 1px solid orange;
+    margin:10px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+}
+.layer1{
+    position: relative;
+    background-color: darkcyan;
+    width: 80px;
+    height: 70px;
+    bottom: 0px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.layer2{
+    position: relative;
+    background-color: cadetblue;
+    width: 80px;
+    height: 70px;
+    bottom: 20px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.perguntas p{
+    font-weight:bold;
+}
+#software figure img{
+    height:70px;
+    width:120px;
+    border-radius: 5px;
+    
 }
